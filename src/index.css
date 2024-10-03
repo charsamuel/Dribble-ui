@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Add these styles to your CSS file (e.g., index.css or App.css) */
+
+/* Add these styles to your CSS file (e.g., index.css or App.css) */
+
+.moving-cards-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.moving-cards {
+  display: flex;
+  white-space: nowrap;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
